@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -12,20 +14,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
 		<!-- Bootstrap -->
-		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
 
 		<!-- Slick -->
-		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
-		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/slick.css' %}"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/slick-theme.css' %}"/>
 
 		<!-- nouislider -->
-		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/nouislider.min.css' %}"/>
 
 		<!-- Font Awesome Icon -->
-		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
 
 		<!-- Custom stlylesheet -->
-		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}"/>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,9 +44,9 @@
 			<div id="top-header">
 				<div class="container">
 					<ul class="header-links pull-left">
-						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
-						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
+						<li><a href="#"><i class="fa fa-phone"></i> +960-980-7405</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> hi@flamexo.de</a></li>
+						<li><a href="#"><i class="fa fa-map-marker"></i> Villa College</a></li>
 					</ul>
 					<ul class="header-links pull-right">
 						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
@@ -64,7 +66,7 @@
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-									<img src="./img/logo.png" alt="">
+									<img src="{% static './img/logo.png' %}" alt="">
 								</a>
 							</div>
 						</div>
@@ -110,7 +112,7 @@
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product01.png" alt="">
+													<img src="{% static './img/product01.png' %}" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -121,7 +123,7 @@
 
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product02.png" alt="">
+													<img src="{% static './img/product02.png' %}" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -196,7 +198,7 @@
 					<div class="col-md-4 col-xs-6">
 						<div class="shop">
 							<div class="shop-img">
-								<img src="./img/shop01.png" alt="">
+								<img src="{% static './img/shop01.png' %}" alt="">
 							</div>
 							<div class="shop-body">
 								<h3>Laptop<br>Collection</h3>
@@ -210,7 +212,7 @@
 					<div class="col-md-4 col-xs-6">
 						<div class="shop">
 							<div class="shop-img">
-								<img src="./img/shop03.png" alt="">
+								<img src="{% static './img/shop03.png' %}" alt="">
 							</div>
 							<div class="shop-body">
 								<h3>Accessories<br>Collection</h3>
@@ -224,7 +226,7 @@
 					<div class="col-md-4 col-xs-6">
 						<div class="shop">
 							<div class="shop-img">
-								<img src="./img/shop02.png" alt="">
+								<img src="{% static './img/shop02.png' %}" alt="">
 							</div>
 							<div class="shop-body">
 								<h3>Cameras<br>Collection</h3>
@@ -273,7 +275,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product01.png" alt="">
+												<img src="{% static './img/product01.png' %}" alt="">
 												<div class="product-label">
 													<span class="sale">-30%</span>
 													<span class="new">NEW</span>
@@ -305,7 +307,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product02.png" alt="">
+												<img src="{% static './img/product02.png' %}" alt="">
 												<div class="product-label">
 													<span class="new">NEW</span>
 												</div>
@@ -336,7 +338,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product03.png" alt="">
+												<img src="{% static './img/product03.png' %}" alt="">
 												<div class="product-label">
 													<span class="sale">-30%</span>
 												</div>
@@ -362,7 +364,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product04.png" alt="">
+												<img src="{% static './img/product04.png' %}" alt="">
 											</div>
 											<div class="product-body">
 												<p class="product-category">Category</p>
@@ -390,7 +392,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product05.png" alt="">
+												<img src="{% static './img/product05.png' %}" alt="">
 											</div>
 											<div class="product-body">
 												<p class="product-category">Category</p>
@@ -508,7 +510,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product06.png" alt="">
+												<img src="{% static './img/product06.png' %}" alt="">
 												<div class="product-label">
 													<span class="sale">-30%</span>
 													<span class="new">NEW</span>
@@ -540,7 +542,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product07.png" alt="">
+												<img src="{% static './img/product07.png' %}" alt="">
 												<div class="product-label">
 													<span class="new">NEW</span>
 												</div>
@@ -571,7 +573,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product08.png" alt="">
+												<img src="{% static './img/product08.png' %}" alt="">
 												<div class="product-label">
 													<span class="sale">-30%</span>
 												</div>
@@ -597,7 +599,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product09.png" alt="">
+												<img src="{% static './img/product09.png' %}" alt="">
 											</div>
 											<div class="product-body">
 												<p class="product-category">Category</p>
@@ -625,7 +627,7 @@
 										<!-- product -->
 										<div class="product">
 											<div class="product-img">
-												<img src="./img/product01.png" alt="">
+												<img src="{% static './img/product01.png' %}" alt="">
 											</div>
 											<div class="product-body">
 												<p class="product-category">Category</p>
@@ -683,7 +685,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product07.png" alt="">
+										<img src="{% static './img/product07.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -696,7 +698,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product08.png" alt="">
+										<img src="{% static './img/product08.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -709,7 +711,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product09.png" alt="">
+										<img src="{% static './img/product09.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -724,7 +726,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product01.png" alt="">
+										<img src="{% static './img/product01.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -737,7 +739,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product02.png" alt="">
+										<img src="{% static './img/product02.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -750,7 +752,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product03.png" alt="">
+										<img src="{% static './img/product03.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -776,7 +778,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product04.png" alt="">
+										<img src="{% static './img/product04.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -789,7 +791,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product05.png" alt="">
+										<img src="{% static './img/product05.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -802,7 +804,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product06.png" alt="">
+										<img src="{% static './img/product06.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -817,7 +819,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product07.png" alt="">
+										<img src="{% static './img/product07.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -830,7 +832,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product08.png" alt="">
+										<img src="{% static './img/product08.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -843,7 +845,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product09.png" alt="">
+										<img src="{% static './img/product09.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -871,7 +873,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product01.png" alt="">
+										<img src="{% static './img/product01.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -884,7 +886,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product02.png" alt="">
+										<img src="{% static './img/product02.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -897,7 +899,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product03.png" alt="">
+										<img src="{% static './img/product03.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -912,7 +914,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product04.png" alt="">
+										<img src="{% static './img/product04.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -925,7 +927,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product05.png" alt="">
+										<img src="{% static './img/product05.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -938,7 +940,7 @@
 								<!-- product widget -->
 								<div class="product-widget">
 									<div class="product-img">
-										<img src="./img/product06.png" alt="">
+										<img src="{% static './img/product06.png' %}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -1007,9 +1009,9 @@
 								<h3 class="footer-title">About Us</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
 								<ul class="footer-links">
-									<li><a href="#"><i class="fa fa-map-marker"></i>1734 Stonecoal Road</a></li>
-									<li><a href="#"><i class="fa fa-phone"></i>+021-95-51-84</a></li>
-									<li><a href="#"><i class="fa fa-envelope-o"></i>email@email.com</a></li>
+									<li><a href="#"><i class="fa fa-map-marker"></i>Villa College</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+960-980-7405</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>hi@flamexo.de</a></li>
 								</ul>
 							</div>
 						</div>
@@ -1089,12 +1091,12 @@
 		<!-- /FOOTER -->
 
 		<!-- jQuery Plugins -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/nouislider.min.js"></script>
-		<script src="js/jquery.zoom.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/bootstrap.min.js' %}"></script>
+		<script src="{% static 'js/slick.min.js' %}"></script>
+		<script src="{% static 'js/nouislider.min.js' %}"></script>
+		<script src="{% static 'js/jquery.zoom.min.js' %}"></script>
+		<script src="{% static 'js/main.js' %}"></script>
 
 	</body>
 </html>
