@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load static crispy_forms_tags %}
+
+{% block content%}
+    <!-- SECTION -->
+    <div class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- Product tab -->
+                <div class="col-md-12">
+                    <div id="product-tab">
+                        <!-- product tab nav -->
+                        <ul class="tab-nav">
+                            <li><a href="{% url 'login' %}?{{query_str}}" style="font-size: x-large;">Login</a>
+                            </li>
+                            <li class="active"><a style="font-size: x-large;">Signup</a></li>
+                        </ul>
+                        <!-- /product tab nav -->
+
+                        <!-- product tab content -->
+                        <div class="tab-content">
+                            <!-- tab2  -->
+                            <div id="signup" class="tab-pane fade in active">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <form method="POST">
+                                            {% csrf_token %}
+                                            {{ form|crispy }}
+                                            <button class="btn btn-block btn-danger search-btn" type="submit">Signup</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tab2  -->
+                        </div>
+                        <!-- /product tab content  -->
+                    </div>
+                </div>
+                <!-- /product tab -->
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+{% endblock %}
